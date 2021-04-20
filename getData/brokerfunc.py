@@ -100,7 +100,7 @@ def get_total_balance():
 
 def get_cash_balance():
     #getaccess()
-    f = open(r"C:\Users\Vinay\Desktop\tradealgo\getData\access_token.txt", "r")
+    f = open("access_token.txt", "r")
     access_token = f.readline()
     f.close()
     bearer_key = "Bearer " + access_token
@@ -121,7 +121,7 @@ def get_cash_balance():
 def get_positions():
     url = f"https://api.tdameritrade.com/v1/accounts/{account_number}"
 
-    f = open(r"C:\Users\Vinay\Desktop\tradealgo\getData\access_token.txt", "r")
+    f = open("access_token.txt", "r")
     access_token = f.readline()
     f.close()
 
@@ -148,7 +148,7 @@ def get_positions():
 
 def buy_stock(number_to_buy, symbol):
     #getaccess()
-    f = open(r"C:\Users\Vinay\Desktop\tradealgo\getData\access_token.txt", "r")
+    f = open("access_token.txt", "r")
     access_token = f.readline()
     f.close()
     #try:
@@ -267,7 +267,7 @@ trail_stock("ASRT", 16)
 
 def sell_stock(number_to_sell, symbol):
     #getaccess()
-    f = open(r"C:\Users\Vinay\Desktop\tradealgo\getData\access_token.txt", "r")
+    f = open("access_token.txt", "r")
     access_token = f.readline()
     f.close()
         
@@ -312,7 +312,7 @@ def sell_stock(number_to_sell, symbol):
 
 def sell_stock_normal(number_to_sell, symbol):
     #getaccess()
-    f = open(r"C:\Users\Vinay\Desktop\tradealgo\getData\access_token.txt", "r")
+    f = open("access_token.txt", "r")
     access_token = f.readline()
     f.close()
     symbol = str(symbol)
@@ -352,7 +352,7 @@ def sell_stock_normal(number_to_sell, symbol):
 
 def place_saved_order(number_to_buy, symbol, typeof):
     #getaccess()
-    f = open(r"C:\Users\Vinay\Desktop\tradealgo\getData\access_token.txt", "r")
+    f = open("access_token.txt", "r")
     access_token = f.readline()
     f.close()
     symbol = str(symbol)
@@ -393,7 +393,7 @@ def place_saved_order(number_to_buy, symbol, typeof):
 
 def query_saved_order():
     #getaccess()
-    f = open(r"C:\Users\Vinay\Desktop\tradealgo\getData\access_token.txt", "r")
+    f = open("access_token.txt", "r")
     access_token = f.readline()
     f.close()
     bearer_key = "Bearer " + access_token
