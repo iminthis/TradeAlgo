@@ -44,21 +44,21 @@ def getaccess():
     browser.find_by_value("Answer a security question").first.click()
 
     # Answer the Security Questions.
-    if browser.is_text_present(''):
+    if browser.is_text_present('INSERT QUESTION'):
         browser.find_by_id("secretquestion0").first.click()
-        browser.find_by_id('secretquestion0').first.fill('')
+        browser.find_by_id('secretquestion0').first.fill('INSERT ANSWER')
 
-    elif browser.is_text_present(''):
+    elif browser.is_text_present('INSERT QUESTION'):
         browser.find_by_id("secretquestion0").first.click()
-        browser.find_by_id('secretquestion0').first.fill('')
+        browser.find_by_id('secretquestion0').first.fill('INSERT ANSWER')
 
-    elif browser.is_text_present(''):
+    elif browser.is_text_present('INSERT QUESTION'):
         browser.find_by_id("secretquestion0").first.click()
-        browser.find_by_id('secretquestion0').first.fill('')
+        browser.find_by_id('secretquestion0').first.fill('INSERT ANSWER')
 
-    elif browser.is_text_present(''):
+    elif browser.is_text_present('INSERT QUESTION'):
         browser.find_by_id("secretquestion0").first.click()
-        browser.find_by_id('secretquestion0').first.fill('')
+        browser.find_by_id('secretquestion0').first.fill('INSERT ANSWER')
 
     # Submit results
     browser.find_by_id('accept').first.click()
