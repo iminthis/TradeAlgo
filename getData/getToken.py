@@ -7,11 +7,10 @@ import requests
 from splinter import Browser
 from secret.config import key, password, user_id
 
-executeable_path = {'executable_path': r'C:\Users\Vinay\Desktop\tradealgo\chromedriver.exe'}
-
 def getaccess():
+    executable_path = {'executable_path': r'../chromedriver.exe'}
     start = time.time()
-    browser = Browser("chrome", **executeable_path, headless = False)
+    browser = Browser("chrome", **executable_path, headless = False)
 
     method = "GET"
     url = "https://auth.tdameritrade.com/auth?"
@@ -96,7 +95,7 @@ def getaccess():
     except:
         access_token = authreply['access_token']
 
-    f = open(r"C:\Users\Vinay\Desktop\tradealgo\getData\access_token.txt", "w")
+    f = open(r"access_token.txt", "w")
     f.truncate(0)
     f.write(access_token)
     f.close()
