@@ -60,6 +60,11 @@ python3 list.py
 
 This will return a list of stocks that would have been purchased if you were to run `buyShares.py`
 
+# Reddit Posts
+
+[**r/wallstreetbets Post**](https://www.reddit.com/r/wallstreetbets/comments/mubgbg/a_14_yearolds_take_on_algorithmic_stock_trading/)
+[**r/algotrading Post**](https://www.reddit.com/r/algotrading/comments/mubrws/a_14_yearolds_take_on_algorithmic_stock_trading/)
+
 # Wrap-Up
 
 Thanks for using my code!
