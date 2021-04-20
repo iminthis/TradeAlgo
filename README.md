@@ -1,6 +1,6 @@
 # TradeAlgo
 
-TradeAlgo is a stock trading algorithm which places orders on penny stocks which will rise from market open to market close.
+TradeAlgo is a stock trading algorithm which places orders on stocks which will rise from market open to market close.
 I developed this to assist with my passion for stock trading which founded in January of 2021 and my desire to become a Quant.
 
 # How does it work?
